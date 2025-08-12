@@ -61,7 +61,7 @@ const About = () => {
     <ul className="space-y-3 text-muted-foreground">
       <li> <strong>UI/UX Designer</strong> — Ally Solutions (2025, Remote)</li>
       <li> <strong>Hackathon Contributor</strong> — lablab.ai & Devpost (2024–2025)</li>
-      <li> <strong>Frontend Developer Intern</strong> — DevelopersHub, KK Solutions, Devsinz</li>
+      <li> <strong>Frontend Developer</strong> — DevelopersHub, KK Solutions, Devsinz</li>
       <li> <strong>Freelance Designer</strong> — Logos, catalogs, and t-shirt branding for international clients</li>
       <li> <strong>UI/UX Intern</strong> — Summer of Bitcoin</li>
       <li> <strong>UI/UX Designer</strong> — Progmize</li>
