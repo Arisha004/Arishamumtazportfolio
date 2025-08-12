@@ -13,7 +13,7 @@ const About = () => {
 
   const skills = [
     "React & TypeScript", "Next.js", "Node.js", "Firebase", "Supabase",
-    "Replit AI", "Cursor IDE", "Lovable", "Firebase", "MGX", "Claude AI", "ChatGPT",
+    "Replit AI", "Cursor IDE", "Lovable", "FIRE" "MGX", "Claude AI", "ChatGPT",
     "Figma", "Adobe Creative Suite", "Tailwind CSS", "HTML5", "CSS3",
     "JavaScript", "Git & GitHub","UI/UX Design",
     "Responsive Design", "Performance"
