@@ -65,7 +65,7 @@ figmaLink:"https://www.figma.com/design/osHuFPQILl2vR2ZtCTBM52/Ai-in-healthcare?
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <Badge variant="outline" className="mb-4 text-primary border-primary/30">
-            Design Work
+            
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="text-gradient">Design Impact</span> Stories

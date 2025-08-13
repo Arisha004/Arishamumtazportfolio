@@ -40,18 +40,9 @@ description: "Built with Lovable AI, AnimeAvatars is a vibrant real-time avatar 
 tags: ["React", "Vite", "Lovable AI", "TypeScript", "TailwindCSS", "ShadCN/UI (Radix)"],
 image: "https://i.postimg.cc/13PMNLQF/Anime-Avatars-Web-App-Mockup.png",
 liveUrl: "https://preview--vibrant-anime-avatars.lovable.app/",
-githubUrl: "https://github.com/Arisha004/vibrant-anime-avatars",
+githubUrl: "https://github.com/Arisha004/AnimeAvatars",
 featured: true
   },
-   {
-    title: "Accessibility Checker",
-  description: "Built with AI assistance and enhanced through custom problem-solving, Accessibly is a precision accessibility analysis platform that helps users instantly evaluate and improve their text or website for inclusivity, readability, and WCAG compliance through a sleek, responsive interface.",
-  tags: ["Lovable","React", "Vite", "AI-assisted Development", "TypeScript", "TailwindCSS", "Accessibility"],
-  image: "https://i.postimg.cc/4dVRxDG0/Mac-Book-Pro-with-Accessibly-App.png",
-  liveUrl: "https://preview--ai-accessible-ai.lovable.app/",
-  githubUrl: "https://github.com/Arisha004/Accessibility-checker",
-  featured: true
-},
    
     {
       title: "Business Nexus",
@@ -92,7 +83,7 @@ featured: true
     {
       title: "Plagiarism Checker",
       description: "Dupfree is a powerful, CLI-based plagiarism detection tool designed to detect textual similarity and assess AI-generated text likelihood.",
-      tags: ["HASHSET", "DSA", "CLI BASED", "JAVA"],
+      tags: ["HASHSET", "DATA STRUCTURES", "CLI BASED", "JAVA"],
       image: "https://i.postimg.cc/3wC1Ymwm/Chat-GPT-Image-Aug-10-2025-10-43-46-AM.png",
       liveUrl: "#",
       githubUrl: "https://github.com/Arisha004/DUPFREE",

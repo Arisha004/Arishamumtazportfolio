@@ -23,7 +23,7 @@ const About = () => {
     <section id="about" className="py-24 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <Badge variant="outline" className="mb-4  text-primary border-primary/30">
+          <Badge variant="outline" className="mb-4 font-si text-primary border-primary/30">
             About Me
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">

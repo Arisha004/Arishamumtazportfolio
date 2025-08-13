@@ -122,25 +122,13 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
               </div>
             </div>
           </div>
-{/* Action Buttons */}
-<div className="flex flex-col sm:flex-row gap-4 pt-4 border-t border-primary/20">
-  {project.githubUrl && (
-    <a
-      href={project.githubUrl}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="flex-1"
-    >
-      <Button
-        variant="outline"
-        className="w-full border-primary/30 hover:border-primary"
-      >
-        View Source Code
-      </Button>
-    </a>
-  )}
-</div>
 
+          {/* Action Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 pt-4 border-t border-primary/20">
+            <Button variant="outline" className="flex-1 border-primary/30 hover:border-primary">
+              View Source Code
+            </Button>
+          </div>
         </div>
       </DialogContent>
     </Dialog>

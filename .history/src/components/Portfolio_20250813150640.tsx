@@ -49,7 +49,7 @@ featured: true
   tags: ["Lovable","React", "Vite", "AI-assisted Development", "TypeScript", "TailwindCSS", "Accessibility"],
   image: "https://i.postimg.cc/4dVRxDG0/Mac-Book-Pro-with-Accessibly-App.png",
   liveUrl: "https://preview--ai-accessible-ai.lovable.app/",
-  githubUrl: "https://github.com/Arisha004/Accessibility-checker",
+  githubUrl: "https://github.com/Arisha004/accessibly",
   featured: true
 },
    
@@ -92,7 +92,7 @@ featured: true
     {
       title: "Plagiarism Checker",
       description: "Dupfree is a powerful, CLI-based plagiarism detection tool designed to detect textual similarity and assess AI-generated text likelihood.",
-      tags: ["HASHSET", "DSA", "CLI BASED", "JAVA"],
+      tags: ["HASHSET", "DATA STRUCTURES", "CLI BASED", "JAVA"],
       image: "https://i.postimg.cc/3wC1Ymwm/Chat-GPT-Image-Aug-10-2025-10-43-46-AM.png",
       liveUrl: "#",
       githubUrl: "https://github.com/Arisha004/DUPFREE",

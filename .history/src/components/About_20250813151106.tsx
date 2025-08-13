@@ -21,7 +21,7 @@ const About = () => {
 
   return (
     <section id="about" className="py-24 px-6">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-8xl mx-auto">
         <div className="text-center mb-16">
           <Badge variant="outline" className="mb-4  text-primary border-primary/30">
             About Me
