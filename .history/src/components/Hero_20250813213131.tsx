@@ -11,7 +11,7 @@ const Hero = () => {
   const downloadResume = () => {
     const link = document.createElement('a');
     link.href = '/public/Arishamumtaz_resume.pdf';
-    link.download = 'Arishamumtaz_resume.pdf';
+    link.download = 'Arishamumtaz_Resume.pdf';
     link.click();
   };
 
