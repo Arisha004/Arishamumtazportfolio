@@ -178,11 +178,11 @@ figmaLink:"https://www.figma.com/design/osHuFPQILl2vR2ZtCTBM52/Ai-in-healthcare?
               and create exceptional user experiences.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-           <Button
+<Button
   size="lg"
   className="btn-ai"
   onClick={() =>
-    window.open("https://www.linkedin.com/in/arisha-mumtaz/", "_blank", "noopener,noreferrer")
+    window.open("https://www.linkedin.com/in/arisha-mumtaz?trk=public_profile", "_blank", "noopener,noreferrer")
   }
 >
   <TrendingUp className="w-5 h-5 mr-2" />

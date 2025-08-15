@@ -194,7 +194,7 @@ figmaLink:"https://www.figma.com/design/osHuFPQILl2vR2ZtCTBM52/Ai-in-healthcare?
   variant="outline"
   className="border-primary/30 hover:border-primary"
   onClick={() => {
-    const section = document.getElementById("schedule");
+    const section = document.getElementById("s");
     if (section) {
       section.scrollIntoView({ behavior: "smooth", block: "start" });
     }

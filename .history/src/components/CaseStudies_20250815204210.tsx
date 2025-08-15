@@ -182,7 +182,7 @@ figmaLink:"https://www.figma.com/design/osHuFPQILl2vR2ZtCTBM52/Ai-in-healthcare?
   size="lg"
   className="btn-ai"
   onClick={() =>
-    window.open("https://www.linkedin.com/in/arisha-mumtaz/", "_blank", "noopener,noreferrer")
+    window.open("https://www.linkedin.com/in/arisha-mumtaz", "_blank", "noopener,noreferrer")
   }
 >
   <TrendingUp className="w-5 h-5 mr-2" />
@@ -194,7 +194,7 @@ figmaLink:"https://www.figma.com/design/osHuFPQILl2vR2ZtCTBM52/Ai-in-healthcare?
   variant="outline"
   className="border-primary/30 hover:border-primary"
   onClick={() => {
-    const section = document.getElementById("schedule");
+    const section = document.getElementById("consultation-section");
     if (section) {
       section.scrollIntoView({ behavior: "smooth", block: "start" });
     }
