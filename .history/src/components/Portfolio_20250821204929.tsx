@@ -21,11 +21,8 @@ const Portfolio = () => {
         "Enterprise-grade security",
         "Cloud-native architecture"
       ],
-      metrics: [
-        { label: "Load Time", value: "<2s" },
-      
-      ],
-      timeline: "2 months",
+     
+      timeline: "3 months",
       team: "Solo Developer"
     };
     setSelectedProject(enhancedProject);

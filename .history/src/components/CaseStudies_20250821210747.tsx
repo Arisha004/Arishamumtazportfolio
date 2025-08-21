@@ -75,7 +75,7 @@ figmaLink:"https://www.figma.com/design/osHuFPQILl2vR2ZtCTBM52/Ai-in-healthcare?
                   <div className="absolute top-6 left-6">
                     <Badge className="bg-primary/90 text-primary-foreground">
                       <Award className="w-3 h-3 mr-1" />
-                      Featured Figma Projects
+                      Featured Case Study
                     </Badge>
                   </div>
                 </div>

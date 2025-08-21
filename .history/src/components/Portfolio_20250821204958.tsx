@@ -22,10 +22,12 @@ const Portfolio = () => {
         "Cloud-native architecture"
       ],
       metrics: [
+        { label: "Performance Score", value: "98/100" },
+        { label: "User Satisfaction", value: "4.9/5" },
         { label: "Load Time", value: "<2s" },
-      
+        { label: "Uptime", value: "99.9%" }
       ],
-      timeline: "2 months",
+      timeline: "3 months",
       team: "Solo Developer"
     };
     setSelectedProject(enhancedProject);

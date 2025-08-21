@@ -39,7 +39,6 @@ challenge: "Simplify complex healthcare website",
 solution: "Created AI-powered insights dashboard with real-time data visualization and predictive analytics",
 image: "https://i.postimg.cc/fL3QGMNW/Healthcare-Website-Login-Page.png",
 tools: ["Figma", "Dribble", "Canva"],
- testimonial: "“I developed a healthcare app during a hackathon organized by LabLab AI. It was an exciting experience where I combined creativity and problem-solving to bring the idea to life.",
 figmaLink:"https://www.figma.com/design/osHuFPQILl2vR2ZtCTBM52/Ai-in-healthcare?t=W5KoUwBawbdMhD4B-0"
     }
   ];
@@ -75,7 +74,7 @@ figmaLink:"https://www.figma.com/design/osHuFPQILl2vR2ZtCTBM52/Ai-in-healthcare?
                   <div className="absolute top-6 left-6">
                     <Badge className="bg-primary/90 text-primary-foreground">
                       <Award className="w-3 h-3 mr-1" />
-                      Featured Figma Projects
+                      Featured Case Study
                     </Badge>
                   </div>
                 </div>
