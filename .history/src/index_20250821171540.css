@@ -8,12 +8,12 @@
 @layer base {
   :root {
     
-    /* Chatbot variables (add inside :root and .dark in Part 1, not replace them) */
+/* Chatbot variables (add inside :root and .dark in Part 1, not replace them) */
 --chatbot-primary: 250 100% 60%;
 --chatbot-secondary: 280 100% 70%;
 --chatbot-bg: 0 0% 100%;
 --chatbot-message-user: 250 100% 60%;
---chatbot-message-bot: 210 40% 96.1%;
+--chatbot-message-bot: 210 100% 85%;  /* light cool blue */
 --chatbot-text: 222.2 84% 4.9%;
 --chatbot-text-light: 215.4 16.3% 46.9%;
 
@@ -21,19 +21,9 @@
 --shadow-chatbot: 0 10px 30px -5px hsl(var(--primary) / 0.3);
 --shadow-float: 0 20px 40px -10px hsl(var(--primary) / 0.4);
 
-/* Dark theme overrides for chatbot */
-
---chatbot-bg: 222.2 84% 4.9%;
---chatbot-message-user: 250 100% 65%;
---chatbot-message-bot: 217.2 32.6% 17.5%;
---chatbot-text: 210 40% 98%;
---chatbot-text-light: 215 20.2% 65.1%;
---gradient-chatbot: linear-gradient(135deg, hsl(var(--chatbot-primary)), hsl(var(--chatbot-secondary)));
---shadow-chatbot: 0 10px 30px -5px hsl(var(--primary) / 0.4);
---shadow-float: 0 20px 40px -10px hsl(var(--primary) / 0.5);
 
     /* Core Colors - AI-Inspired Palette */
-    --background: 9 14% 3%;
+    --background: 8 14% 3%;
     --foreground: 210 40% 98%;
 
     --card: 12 20% 6%;

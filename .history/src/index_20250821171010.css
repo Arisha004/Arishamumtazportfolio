@@ -7,7 +7,6 @@
 
 @layer base {
   :root {
-    
     /* Chatbot variables (add inside :root and .dark in Part 1, not replace them) */
 --chatbot-primary: 250 100% 60%;
 --chatbot-secondary: 280 100% 70%;
@@ -22,7 +21,8 @@
 --shadow-float: 0 20px 40px -10px hsl(var(--primary) / 0.4);
 
 /* Dark theme overrides for chatbot */
-
+--chatbot-primary: 250 100% 65%;
+--chatbot-secondary: 280 100% 75%;
 --chatbot-bg: 222.2 84% 4.9%;
 --chatbot-message-user: 250 100% 65%;
 --chatbot-message-bot: 217.2 32.6% 17.5%;
@@ -33,7 +33,7 @@
 --shadow-float: 0 20px 40px -10px hsl(var(--primary) / 0.5);
 
     /* Core Colors - AI-Inspired Palette */
-    --background: 9 14% 3%;
+    --background: 8 14% 3%;
     --foreground: 210 40% 98%;
 
     --card: 12 20% 6%;
@@ -170,6 +170,39 @@
   ::-webkit-scrollbar-thumb:hover {
     background: hsl(var(--primary-glow));
   }
+}
+/* Bot message bubble */
+.bot-message {
+  background: #e0f2ff; /* light cool blue */
+  color: #003366; /* deep navy text for contrast */
+}
+
+/* User message bubble (keep your design as it is if needed) */
+.user-message {
+  background: linear-gradient(135deg, #4a90e2, #357abd); /* gradient blue */
+  color: #fff;
+}
+
+/* Send button styling */
+.chatbot-input button {
+  background: linear-gradient(135deg, #4a90e2, #357abd); /* same gradient as bot */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.chatbot-input button:hover {
+  background: linear-gradient(135deg, #5aa0f2, #4689c8); /* slightly lighter on hover */
+}
+
+/* Helper text under input */
+.chatbot-input p {
+  font-size: 13px;
+  color: #555; /* darker grey for better readability */
+  margin-top: 6px;
 }
 
 

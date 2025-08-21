@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ========== Root Variables ========== */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --accent: #28a745;
+  --muted: #f8f9fa;
+  --border: #e0e0e0;
+  --ring: #dee2e6;
+  --radius: 8px;
+}
+
+.dark {
+  --background: #0a0a0a;
+  --foreground: #f1f1f1;
+  --primary: #1e90ff;
+  --secondary: #adb5bd;
+  --accent: #20c997;
+  --muted: #212529;
+  --border: #343a40;
+  --ring: #495057;
+}
+
+/* ========== Base Layer ========== */
+@layer base {
+  body {
+    @apply bg-[var(--background)] text-[var(--foreground)];
+  }
+}
+
+/* ========== Components Layer ========== */
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-lg font-medium transition-all duration-200;
+  }
+  .btn-primary {
+    @apply bg-[var(--primary)] text-white hover:opacity-90;
+  }
+  .btn-secondary {
+    @apply bg-[var(--secondary)] text-white hover:opacity-90;
+  }
+}
+
+/* ========== Scrollbar Styles ========== */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--muted);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+/* ========== Glow on Hover Button ========== */
+.glow-on-hover {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg,
+    #ff0000, #ff7300, #fffb00, #48ff00,
+    #00ffd5, #002bff, #7a00ff, #ff00ab,
+    #ff0000);
+  position: absolute;
+  top: -2px; left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  border-radius: 10px;
+}
+.glow-on-hover:after {
+  content: '';
+  position: absolute;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: #111;
+  border-radius: 10px;
+  z-index: -1;
+}
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+/* Glow Animation */
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+/* ========== Utility Layer ========== */
+@layer utilities {
+  /* Animation delays */
+  .animation-delay-100 { animation-delay: 100ms; }
+  .animation-delay-200 { animation-delay: 200ms; }
+  .animation-delay-300 { animation-delay: 300ms; }
+  .animation-delay-400 { animation-delay: 400ms; }
+  .animation-delay-500 { animation-delay: 500ms; }
+
+  /* Floating Animation */
+  .animate-floating { animation: floating 6s ease-in-out infinite; }
+
+  /* Scroll Animation */
+  .animate-scroll { animation: scroll 20s linear infinite; }
+  .pause:hover .animate-scroll { animation-play-state: paused; }
+
+  /* Marquee Animation */
+  .animate-marquee { animation: marquee 15s linear infinite; }
+  .animate-marquee:hover { animation-play-state: paused; }
+
+  /* Gradient Animation */
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient-move 5s ease infinite;
+  }
+
+  /* Fade in Up */
+  .animate-fade-in-up { animation: fadeInUp 1s ease-out forwards; }
+}
+
+/* ========== Keyframes ========== */
+@keyframes floating {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+}
+
+@keyframes scroll {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+
+@keyframes gradient-move {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}

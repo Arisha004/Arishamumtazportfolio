@@ -12,7 +12,7 @@
 --chatbot-primary: 250 100% 60%;
 --chatbot-secondary: 280 100% 70%;
 --chatbot-bg: 0 0% 100%;
---chatbot-message-user: 250 100% 60%;
+--chatbot-message-user:background: linear-gradient(135deg, #4facfe, #00f2fe);
 --chatbot-message-bot: 210 40% 96.1%;
 --chatbot-text: 222.2 84% 4.9%;
 --chatbot-text-light: 215.4 16.3% 46.9%;
@@ -22,7 +22,8 @@
 --shadow-float: 0 20px 40px -10px hsl(var(--primary) / 0.4);
 
 /* Dark theme overrides for chatbot */
-
+--chatbot-primary: 250 100% 65%;
+--chatbot-secondary: 280 100% 75%;
 --chatbot-bg: 222.2 84% 4.9%;
 --chatbot-message-user: 250 100% 65%;
 --chatbot-message-bot: 217.2 32.6% 17.5%;
@@ -33,7 +34,7 @@
 --shadow-float: 0 20px 40px -10px hsl(var(--primary) / 0.5);
 
     /* Core Colors - AI-Inspired Palette */
-    --background: 9 14% 3%;
+    --background: 8 14% 3%;
     --foreground: 210 40% 98%;
 
     --card: 12 20% 6%;
