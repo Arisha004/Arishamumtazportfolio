@@ -82,7 +82,8 @@ export const knowledgeBase: KnowledgeItem[] = [
     keywords: ['thank you', 'thanks', 'appreciate'],
     response: "You're very welcome! 😊 If you have any more questions about Arisha's skills, experience, or how to get in touch with her, feel free to ask. Don't forget to connect with her on LinkedIn: https://pk.linkedin.com/in/arisha-mumtaz",
     category: 'general'
-  },
+  }
+];
 
 
   // Portfolios

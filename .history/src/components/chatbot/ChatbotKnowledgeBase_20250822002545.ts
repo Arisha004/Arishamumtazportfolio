@@ -52,38 +52,6 @@ export const knowledgeBase: KnowledgeItem[] = [
     response: "I’m currently working with **[Ally Solutions](https://www.allysolutions.ai/)** as a UI/UX Designer and Front-End Developer, where I contribute to collaborative projects, attend team meetings, and align on project goals.\n\nHighlights of my journey:\n💻 **Frontend Development** – HTML, CSS, JavaScript, Bootstrap, jQuery\n🎨 **UI/UX** – Figma design systems, Webflow deployment\n🚀 **Full-Stack** – Applications using Replit, Lovable, MGX\n🤝 **Teamwork** – Collaborated with cross-functional teams at Ally Solutions\n\nI also maintain 3 portfolios showcasing my work in development and design.",
     category: 'experience'
   },
-  {
-    keywords: ['slack', 'communication', 'team collaboration'],
-    response: "For team collaboration and project communication, I'm available on Slack! You can reach out to me via LinkedIn (https://pk.linkedin.com/in/arisha-mumtaz) to get my Slack details for project collaboration.",
-    category: 'contact'
-  },
-
-  // Pricing & Rates (General)
-  {
-    keywords: ['price', 'cost', 'rate', 'budget', 'pricing'],
-    response: "I offer competitive rates based on project scope and requirements. Factors that influence pricing include:\n\n📋 **Project Complexity** - Simple landing page vs. complex web application\n⏱️ **Timeline** - Standard delivery vs. rush projects\n🎯 **Services** - Design only, development only, or full-service\n📱 **Features** - Responsive design, animations, custom functionality\n\nLet's discuss your specific needs! Contact me via LinkedIn: https://pk.linkedin.com/in/arisha-mumtaz for a personalized quote.",
-    category: 'services'
-  },
-
-  // Default responses for unmatched queries
-  {
-    keywords: ['hello', 'hi', 'hey', 'good morning', 'good afternoon', 'good evening'],
-    response: "Hello! 👋 I'm Arisha's AI assistant. I'm here to tell you all about Arisha Mumtaz - her skills in frontend development, UI/UX design, and how you can get in touch with her. What would you like to know?",
-    category: 'general'
-  },
-
-  {
-    keywords: ['help', 'what can you tell me', 'information'],
-    response: "I can help you learn about Arisha Mumtaz! I can tell you about:\n\n🔹 Her technical skills (HTML, CSS, JavaScript, Figma, Webflow)\n🔹 Services she offers (Frontend Development, UI/UX Design)\n🔹 How to contact her (LinkedIn, GitHub)\n🔹 Her background and experience\n🔹 Location and availability\n\nWhat specific information are you looking for?",
-    category: 'general'
-  },
-
-  {
-    keywords: ['thank you', 'thanks', 'appreciate'],
-    response: "You're very welcome! 😊 If you have any more questions about Arisha's skills, experience, or how to get in touch with her, feel free to ask. Don't forget to connect with her on LinkedIn: https://pk.linkedin.com/in/arisha-mumtaz",
-    category: 'general'
-  },
-
 
   // Portfolios
   {
