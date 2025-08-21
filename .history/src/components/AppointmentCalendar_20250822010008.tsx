@@ -1,30 +1,19 @@
-"use client";
-
 import { useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Calendar } from "@/components/ui/calendar";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { 
-  Calendar as CalendarIcon, 
-  Clock, 
-  Video, 
-  Coffee, 
-  Briefcase, 
-  CheckCircle, 
-  MessageSquare 
-} from "lucide-react";
+import { Calendar as CalendarIcon, Clock, Video, Coffee, Briefcase, CheckCircle, MessageSquare } from "lucide-react";
 import { toast } from "sonner";
 import { format } from "date-fns";
-import emailjs from "emailjs-com";
 
 const AppointmentCalendar = () => {
   const [selectedDate, setSelectedDate] = useState<Date>();
   const [selectedTime, setSelectedTime] = useState<string>();
   const [meetingType, setMeetingType] = useState<string>();
-  const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -64,48 +53,26 @@ const AppointmentCalendar = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    if (!selectedDate || !selectedTime || !meetingType || !formData.name || !formData.email) {
-      toast.error("Please fill in all required details.");
+    if (!selectedDate || !selectedTime || !meetingType) {
+      toast.error("Please select date, time, and meeting type");
       return;
     }
 
-    setLoading(true);
-
-    try {
-     await emailjs.send(
-  "service_ji21wqs",  
-  "template_wov9ch6", 
-  {
-    name: formData.name,  
-    email: formData.email, 
-    selectedDate: format(selectedDate, "PPP"), 
-    selectedTime: selectedTime, 
-    meetingType: meetingTypes.find(t => t.id === meetingType)?.title, 
-    company: formData.company, 
-    projectDetails: formData.projectDetails 
-  },
-  "I8-_oOYGGsza3p9WI"  
-);
-      toast.success(`✅ Appointment scheduled for ${format(selectedDate, "PPP")} at ${selectedTime}. Confirmation email sent!`);
-
-      // Reset form
-      setSelectedDate(undefined);
-      setSelectedTime(undefined);
-      setMeetingType(undefined);
-      setFormData({ name: "", email: "", company: "", projectDetails: "" });
-
-    } catch (error) {
-      console.error("EmailJS Error:", error);
-      toast.error("❌ Something went wrong while scheduling. Please try again.");
-    } finally {
-      setLoading(false);
-    }
+    // Simulate booking appointment
+    toast.success(`Appointment scheduled for ${format(selectedDate, "PPP")} at ${selectedTime}!`);
+    
+    // Reset form
+    setSelectedDate(undefined);
+    setSelectedTime(undefined);
+    setMeetingType(undefined);
+    setFormData({ name: "", email: "", company: "", projectDetails: "" });
   };
 
   const handleInputChange = (field: string, value: string) => {
     setFormData(prev => ({ ...prev, [field]: value }));
   };
 
+  // Disable weekends and past dates
   const isDateDisabled = (date: Date) => {
     const today = new Date();
     today.setHours(0, 0, 0, 0);
@@ -267,21 +234,10 @@ const AppointmentCalendar = () => {
                 <Button 
                   type="submit" 
                   className="w-full btn-ai"
-                  disabled={
-                    !selectedDate || 
-                    !selectedTime || 
-                    !meetingType || 
-                    !formData.name.trim() || 
-                    !formData.email.trim() || 
-                    loading
-                  }
+                  disabled={!selectedDate || !selectedTime || !meetingType}
                 >
-                  {loading ? "Scheduling..." : (
-                    <>
-                      <CalendarIcon className="w-4 h-4 mr-2" />
-                      Schedule Appointment
-                    </>
-                  )}
+                  <CalendarIcon className="w-4 h-4 mr-2" />
+                  Schedule Appointment
                 </Button>
               </form>
 
@@ -306,34 +262,34 @@ const AppointmentCalendar = () => {
             <h3 className="text-xl font-bold mb-4 text-primary">Prefer Other Ways to Connect?</h3>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
-                asChild
-                variant="outline"
-                className="border-primary/30 hover:border-primary"
-              >
-                <a
-                  href="https://calendly.com/arishamumtaz340"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Video className="w-4 h-4 mr-2" />
-                  Schedule Instant Call With Me 
-                </a>
-              </Button>  
-              <Button
-                asChild
-                variant="outline"
-                className=" border-accent/30 hover:border-accent"
-              >
-                <a
-                  href="https://www.linkedin.com/in/arisha-mumtaz/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <MessageSquare className="w-4 h-4 mr-2" />
-                  Message Me on LinkedIn
-                </a>
-              </Button>
-            </div>
+  asChild
+  variant="outline"
+  className="border-primary/30 hover:border-primary"
+>
+  <a
+    href="https://calendly.com/arishamumtaz340"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <Video className="w-4 h-4 mr-2" />
+    Schedule Instant Call With Me 
+  </a>
+</Button>  
+ <Button
+  asChild
+  variant="outline"
+  className=" border-accent/30 hover:border-accent"
+>
+  <a
+    href="https://www.linkedin.com/in/arisha-mumtaz/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <MessageSquare className="w-4 h-4 mr-2" />
+    Message Me on LinkedIn
+  </a>
+</Button>
+</div>
           </div>
         </div>
       </div>

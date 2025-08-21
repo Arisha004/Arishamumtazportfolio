@@ -74,17 +74,17 @@ const AppointmentCalendar = () => {
     try {
      await emailjs.send(
   "service_ji21wqs",  
-  "template_wov9ch6", 
+  "template_wov9ch6",  // ✅ your template ID
   {
-    name: formData.name,  
-    email: formData.email, 
-    selectedDate: format(selectedDate, "PPP"), 
-    selectedTime: selectedTime, 
-    meetingType: meetingTypes.find(t => t.id === meetingType)?.title, 
-    company: formData.company, 
-    projectDetails: formData.projectDetails 
+    name: formData.name,  // matches {{name}}
+    email: formData.email,  // matches {{email}}
+    selectedDate: format(selectedDate, "PPP"), // matches {{selectedDate}}
+    selectedTime: selectedTime, // matches {{selectedTime}}
+    meetingType: meetingTypes.find(t => t.id === meetingType)?.title, // matches {{meetingType}}
+    company: formData.company, // optional (if you add {{company}} to template)
+    projectDetails: formData.projectDetails // optional (if you add {{projectDetails}} to template)
   },
-  "I8-_oOYGGsza3p9WI"  
+  "I8-_oOYGGsza3p9WI"  // ✅ your public key
 );
       toast.success(`✅ Appointment scheduled for ${format(selectedDate, "PPP")} at ${selectedTime}. Confirmation email sent!`);
 

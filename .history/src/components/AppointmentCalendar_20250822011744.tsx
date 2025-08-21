@@ -84,7 +84,7 @@ const AppointmentCalendar = () => {
     company: formData.company, 
     projectDetails: formData.projectDetails 
   },
-  "I8-_oOYGGsza3p9WI"  
+  "I8-_oOYGGsza3p9WI"  // ✅ your public key
 );
       toast.success(`✅ Appointment scheduled for ${format(selectedDate, "PPP")} at ${selectedTime}. Confirmation email sent!`);
 
