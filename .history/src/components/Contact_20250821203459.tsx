@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, MessageSquare, CheckCircle, Send } from "lucide-react";
 import { toast } from "sonner";
-import emailjs from "emailjs-com"; 
+import emailjs from "emailjs-com"; // ✅ Added EmailJS
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -31,7 +31,7 @@ const Contact = () => {
           subject: formData.subject,
           message: formData.message,
         },
-        "I8-_oOYGGsza3p9WI"    
+        "your_public_key"    // 🔹 replace with your Public Key
       );
 
       toast.success("Message sent successfully! I'll get back to you soon.");

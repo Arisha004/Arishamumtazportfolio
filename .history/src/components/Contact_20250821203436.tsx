@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, MessageSquare, CheckCircle, Send } from "lucide-react";
 import { toast } from "sonner";
-import emailjs from "emailjs-com"; 
+import emailjs from "emailjs-com"; // ✅ Added EmailJS
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -23,16 +23,16 @@ const Contact = () => {
 
     try {
       await emailjs.send(
-        "service_ji21wqs",   
-        "template_nmkea0l",  
+             .send(
+        "service_ji21wqs", // ✅ Your Service ID
+        "template_nmkea0l", // ✅ Your Template ID
         {
           from_name: formData.name,
           from_email: formData.email,
-          subject: formData.subject,
           message: formData.message,
         },
-        "I8-_oOYGGsza3p9WI"    
-      );
+        "I8-_oOYGGsza3p9WI" 
+      )
 
       toast.success("Message sent successfully! I'll get back to you soon.");
       setFormData({ name: "", email: "", subject: "", message: "" });

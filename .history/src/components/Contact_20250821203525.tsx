@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, MessageSquare, CheckCircle, Send } from "lucide-react";
 import { toast } from "sonner";
-import emailjs from "emailjs-com"; 
+import emailjs from "emailjs-com"; // ✅ Added EmailJS
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -62,7 +62,7 @@ const Contact = () => {
       icon: MessageSquare,
       title: "Response Time",
       value: "Within 24 hours",
-      link: "https://www.linkedin.com/in/arisha-mumtaz-788b16288/"
+      link: ""
     }
   ];
 

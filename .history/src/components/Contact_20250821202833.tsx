@@ -4,9 +4,9 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, MessageSquare, CheckCircle, Send } from "lucide-react";
+import { Mail, MessageSquare, Phone, MapPin, Send, CheckCircle } from "lucide-react";
 import { toast } from "sonner";
-import emailjs from "emailjs-com"; 
+import emailjs from "emailjs-com";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -21,23 +21,15 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
+    // Simulate form submission with email notification
     try {
-      await emailjs.send(
-        "service_ji21wqs",   
-        "template_nmkea0l",  
-        {
-          from_name: formData.name,
-          from_email: formData.email,
-          subject: formData.subject,
-          message: formData.message,
-        },
-        "I8-_oOYGGsza3p9WI"    
-      );
-
+      // In a real implementation, you would send this to your backend
+      // which would handle the email notification
+      await new Promise(resolve => setTimeout(resolve, 2000));
+      
       toast.success("Message sent successfully! I'll get back to you soon.");
       setFormData({ name: "", email: "", subject: "", message: "" });
     } catch (error) {
-      console.error("EmailJS Error:", error);
       toast.error("Failed to send message. Please try again.");
     } finally {
       setIsSubmitting(false);
@@ -56,7 +48,7 @@ const Contact = () => {
       icon: Mail,
       title: "Email",
       value: "arishamumtaz340@gmail.com",
-      link: "mailto:arishamumtaz340@gmail.com"
+      link: "arishamumtaz340@gmail.com"
     },
     {
       icon: MessageSquare,
@@ -96,10 +88,7 @@ const Contact = () => {
 
             <div className="grid sm:grid-cols-2 gap-6">
               {contactInfo.map((info, index) => (
-                <Card
-                  key={index}
-                  className="bg-gradient-to-br from-card to-card/50 border-primary/20 hover:border-primary/40 transition-all duration-300 hover:scale-105 cursor-pointer"
-                >
+                <Card key={index} className="bg-gradient-to-br from-card to-card/50 border-primary/20 hover:border-primary/40 transition-all duration-300 hover:scale-105 cursor-pointer">
                   <CardContent className="p-6">
                     <div className="flex items-center space-x-4">
                       <div className="p-3 rounded-lg bg-primary/10">
