@@ -8,7 +8,7 @@ export interface KnowledgeItem {
 export const knowledgeBase: KnowledgeItem[] = [
   // About Arisha
   {
-    keywords: ['who are you', 'about you', 'anything','everything','who is arisha', 'tell me about yourself', 'introduction'],
+    keywords: ['who are you', 'about you', 'who is arisha', 'tell me about yourself', 'introduction'],
     response: "Hi! I'm Arisha Mumtaz, a passionate Front-End Developer, UI/UX Designer, and Full-Stack Problem Solver based in Karachi, Pakistan. I specialize in building modern, user-friendly, and scalable applications by combining design and development. I build full-stack apps using **Replit, Lovable, and MGX** while solving real-world problems through structured implementation, testing, and debugging. Unlike a vibe coder, I approach projects with problem-solving, scalability, and user experience in mind.",
     category: 'about'
   },

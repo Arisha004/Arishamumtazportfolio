@@ -20,7 +20,7 @@ const SmartChatbot: React.FC = () => {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: '1',
-      text: "Hi! I'm Arisha's AI assistant 👋 I can tell you all about her skills as a Designer and Developer. What would you like to know?",
+      text: "Hi! I'm Arisha's AI assistant 👋 I can tell you all about her skills as a UI/UX Designer and Developer. What would you like to know?",
       isUser: false,
       timestamp: new Date()
     }
