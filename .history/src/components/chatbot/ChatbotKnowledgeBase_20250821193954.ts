@@ -62,8 +62,8 @@ export const knowledgeBase: KnowledgeItem[] = [
 
   // Contact
   {
-    keywords: ['contact', 'reach', 'email', 'phone', 'get in touch', 'hire me','github', 'linkedin'],
-    response: "You can connect with me here:\n\n📧 LinkedIn: [My linkedIn](https://www.linkedin.com/in/arisha-mumtaz/)\n💼 GitHub: [My GitHub](https://github.com/Arisha004)\n🌐 Ally Solutions: [allysolutions.ai](https://www.allysolutions.ai/)\n📍 Location: Karachi, Pakistan\n\nI’d love to connect for collaborations, freelance work, or projects!",
+    keywords: ['contact', 'reach', 'email', 'phone', 'get in touch', 'hire me'],
+    response: "You can connect with me here:\n\n📧 LinkedIn: [linkedin.com/in/arisha-mumtaz](https://www.linkedin.com/in/arisha-mumtaz/)\n💼 GitHub: [github.com/Arisha004](https://github.com/Arisha004)\n🌐 Ally Solutions: [allysolutions.ai](https://www.allysolutions.ai/)\n📍 Location: Karachi, Pakistan\n\nI’d love to connect for collaborations, freelance work, or projects!",
     category: 'contact'
   },
 
@@ -80,7 +80,7 @@ export const knowledgeBase: KnowledgeItem[] = [
   },
   {
     keywords: ['thank you', 'thanks', 'appreciate'],
-    response: "You're welcome! 😊 Don’t forget to check out Arisha’s LinkedIn: [My LinkedIn](https://www.linkedin.com/in/arisha-mumtaz/) and her portfolios to see her work in action.",
+    response: "You're welcome! 😊 Don’t forget to check out Arisha’s LinkedIn: [linkedin.com/in/arisha-mumtaz](https://pk.linkedin.com/in/arisha-mumtaz) and her portfolios to see her work in action.",
     category: 'general'
   }
 ];

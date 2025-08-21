@@ -63,7 +63,7 @@ export const knowledgeBase: KnowledgeItem[] = [
   // Contact
   {
     keywords: ['contact', 'reach', 'email', 'phone', 'get in touch', 'hire me','github', 'linkedin'],
-    response: "You can connect with me here:\n\n📧 LinkedIn: [My linkedIn](https://www.linkedin.com/in/arisha-mumtaz/)\n💼 GitHub: [My GitHub](https://github.com/Arisha004)\n🌐 Ally Solutions: [allysolutions.ai](https://www.allysolutions.ai/)\n📍 Location: Karachi, Pakistan\n\nI’d love to connect for collaborations, freelance work, or projects!",
+    response: "You can connect with me here:\n\n📧 LinkedIn: [My linkedIn](https://www.linkedin.com/in/arisha-mumtaz/)\n💼 GitHub: [](https://github.com/Arisha004)\n🌐 Ally Solutions: [allysolutions.ai](https://www.allysolutions.ai/)\n📍 Location: Karachi, Pakistan\n\nI’d love to connect for collaborations, freelance work, or projects!",
     category: 'contact'
   },
 

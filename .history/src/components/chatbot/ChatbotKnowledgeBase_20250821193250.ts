@@ -49,7 +49,7 @@ export const knowledgeBase: KnowledgeItem[] = [
   // Experience
   {
     keywords: ['experience', 'background', 'work history', 'portfolio', 'career'],
-    response: "I’m currently working with **[Ally Solutions](https://www.allysolutions.ai/)** as a UI/UX Designer and Front-End Developer, where I contribute to collaborative projects, attend team meetings, and align on project goals.\n\nHighlights of my journey:\n💻 **Frontend Development** – HTML, CSS, JavaScript, Bootstrap, jQuery\n🎨 **UI/UX** – Figma design systems, Webflow deployment\n🚀 **Full-Stack** – Applications using Replit, Lovable, MGX\n🤝 **Teamwork** – Collaborated with cross-functional teams at Ally Solutions\n\nI also maintain 3 portfolios showcasing my work in development and design.",
+    response: "I’m currently working with **Ally Solutions(https://www.allysolutions.ai/)** as a UI/UX Designer and Front-End Developer, where I contribute to collaborative projects, attend team meetings, and align on project goals.\n\nHighlights of my journey:\n💻 **Frontend Development** – HTML, CSS, JavaScript, Bootstrap, jQuery\n🎨 **UI/UX** – Figma design systems, Webflow deployment\n🚀 **Full-Stack** – Applications using Replit, Lovable, MGX\n🤝 **Teamwork** – Collaborated with cross-functional teams at Ally Solutions\n\nI also maintain 3 portfolios showcasing my work in development and design.",
     category: 'experience'
   },
 
@@ -62,15 +62,15 @@ export const knowledgeBase: KnowledgeItem[] = [
 
   // Contact
   {
-    keywords: ['contact', 'reach', 'email', 'phone', 'get in touch', 'hire me','github', 'linkedin'],
-    response: "You can connect with me here:\n\n📧 LinkedIn: [My linkedIn](https://www.linkedin.com/in/arisha-mumtaz/)\n💼 GitHub: [My GitHub](https://github.com/Arisha004)\n🌐 Ally Solutions: [allysolutions.ai](https://www.allysolutions.ai/)\n📍 Location: Karachi, Pakistan\n\nI’d love to connect for collaborations, freelance work, or projects!",
+    keywords: ['contact', 'reach', 'email', 'phone', 'get in touch', 'hire me'],
+    response: "You can connect with me here:\n\n📧 LinkedIn: [linkedin.com/in/arisha-mumtaz](https://pk.linkedin.com/in/arisha-mumtaz)\n💼 GitHub: [github.com/Arisha004](https://github.com/Arisha004)\n🌐 Ally Solutions: [allysolutions.ai](https://www.allysolutions.ai/)\n📍 Location: Karachi, Pakistan\n\nI’d love to connect for collaborations, freelance work, or projects!",
     category: 'contact'
   },
 
   // Default responses
   {
     keywords: ['hello', 'hi', 'hey', 'good morning', 'good afternoon', 'good evening'],
-    response: "Hello 👋! I’m Arisha’s portfolio assistant. I can tell you about her **skills, education, projects, teamwork, experience, or portfolios**. What would you like to know?",
+    response: "Hello 👋! I’m Arisha’s portfolio assistant. I can tell you about her **skills, education, projects, teamwork, Ally Solutions experience, or portfolios**. What would you like to know?",
     category: 'general'
   },
   {
@@ -80,7 +80,7 @@ export const knowledgeBase: KnowledgeItem[] = [
   },
   {
     keywords: ['thank you', 'thanks', 'appreciate'],
-    response: "You're welcome! 😊 Don’t forget to check out Arisha’s LinkedIn: [My LinkedIn](https://www.linkedin.com/in/arisha-mumtaz/) and her portfolios to see her work in action.",
+    response: "You're welcome! 😊 Don’t forget to check out Arisha’s LinkedIn: [linkedin.com/in/arisha-mumtaz](https://pk.linkedin.com/in/arisha-mumtaz) and her portfolios to see her work in action.",
     category: 'general'
   }
 ];
