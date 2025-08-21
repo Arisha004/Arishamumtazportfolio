@@ -55,7 +55,7 @@ export const knowledgeBase: KnowledgeItem[] = [
 
   // Portfolios
   {
-    keywords: ['portfolio','links', 'portfolio links', 'projects', 'samples', 'work'],
+    keywords: ['portfolio','links', 'projects', 'samples', 'work'],
     response: "Here are my portfolio links:\n\n🌐 Development Portfolio 1: [arishadev.netlify.app](https://arishadev.netlify.app/)\n🌐 Development Portfolio 2: [myportfolioarishamumtaz.netlify.app](https://myportfolioarishamumtaz.netlify.app/)\n🎨 Design Portfolio: [arishas-portfolio-6a869d.webflow.io](https://arishas-portfolio-6a869d.webflow.io/)\n\nThese showcase my design skills, frontend projects, and end-to-end development.",
     category: 'portfolio'
   },
